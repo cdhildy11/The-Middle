@@ -23,6 +23,22 @@ h1, h2, h3 {
 
 /* Navbar styles */
 
+.nav > .nav_list > .nav-link{
+  padding: 12.5px 0px;
+}
+
+.navbar-brand {
+  padding: 12.5px 0px;
+}
+
+.navbar > .container .navbar-brand {
+  margin-left: 15px;
+}
+
+.nav > .nav_list > .nav-link:hover, .navbar-brand:hover {
+  border-bottom: 2px solid black;
+}
+
 .navbar-default{
   position : fixed;
   top : 0;
@@ -33,12 +49,17 @@ h1, h2, h3 {
   border: none;
   }
   
-.navbar-default .navbar-brand {
+.navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
   color: white;
 }
 
-.navbar-default .navbar-nav > li > a {
+
+.navbar-brand > a {
   color: white;
+}
+
+.navbar-header {
+  text-align: center;
 }
 
 .navbar.sticked {
@@ -46,11 +67,11 @@ h1, h2, h3 {
   height: 75px;
 }
 
-.navbar-default .navbar-brand.sticked{
+.navbar-default .navbar-brand.sticked, .navbar-default .navbar-nav > li > a.sticked{
   color: black;
 }
 
-.navbar-default .navbar-nav > li > a.sticked{
+.navbar-brand > a.sticked {
   color: black;
 }
 
@@ -58,7 +79,7 @@ h1, h2, h3 {
   background-color: white;
 }
 
-.navbar-default:hover .navbar-brand{
+.navbar-default:hover .navbar-brand {
   color: black;
 }
 
@@ -66,14 +87,39 @@ h1, h2, h3 {
   color: black;
 }
 
+.nav_list{
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-right: 20px;
+}
+
+.navbar-header {
+  padding-top: 12.5px;
+  padding-bottom: 12.5px;
+}
+
+.nav-container {
+  margin-top: 25px;
+}
+
+.nav-container.sticked {
+  margin-top: 0px;
+}
+
+
+
 
 /* Home style */
 
 .home-background {
   height: 750px;
   width: 100%;
-  background-image: url("nasa-80968");
+  background-image: url("World-Collage");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.bottom {
+  height: 2000px;
 }

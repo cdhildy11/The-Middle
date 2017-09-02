@@ -36,3 +36,10 @@ $(function() {
       $(".navbar-default,.navbar-brand,li,a").toggleClass("sticked", scroll >= 100);
   });
 });
+
+$(function() {
+  var $window = $(window).scroll(function() {
+  	var scroll = $window.scrollTop();
+      $(".container, .nav-container").toggleClass("sticked", scroll >= 100);
+  });
+});

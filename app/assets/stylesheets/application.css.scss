@@ -47,22 +47,26 @@ h1, h2, h3 {
   height : 125px;
   background : transparent;
   border: none;
+  transition: height 0.3s;
+  transition: background-color 0.3s;
   }
   
 .navbar-default .navbar-brand, .navbar-default .navbar-nav > li > a {
   color: white;
+  transition: color 0.3s;
 }
 
 
 .navbar-brand > a {
   color: white;
+  transition: color 0.3s;
 }
 
 .navbar-header {
   text-align: center;
 }
 
-.navbar.sticked {
+.navbar-default.sticked {
   background-color: white;
   height: 75px;
 }
@@ -100,6 +104,7 @@ h1, h2, h3 {
 
 .nav-container {
   margin-top: 25px;
+  transition: margin-top 0.3s;
 }
 
 .nav-container.sticked {
